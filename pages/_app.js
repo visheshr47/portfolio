@@ -11,7 +11,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <AnimatePresence mode="wait">
+        {/* Remove h-full from className beause it is causing not to load other pages
         <motion.div key={router.route} className="h-full">
+         */}
+        <motion.div key={router.route} className="">
           <Transition />
         </motion.div>
         <Component {...pageProps} />
