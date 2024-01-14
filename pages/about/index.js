@@ -133,9 +133,13 @@ const About = () => {
             animate="show"
             exit="hidden"
           >
-            loremipsum sfjdsfjnajknckanjckajnvcakjkj jkekcj jkejka skakcejkncjk
-            dqan jkadjkc jcksdnvjknsdvksd kvkds vklsdmklv k j rjg
-            ngeringreignreingd gjr vinui n iw fuewiuf
+            In my journey as a frontend developer, I believe that captivating
+            stories give birth to magnificent designs. Each line of code, like a
+            plot twist, intertwines with visual elements, creating an immersive
+            digital narrative. Explore my portfolio to witness how I blend
+            storytelling and design, transforming technology into enchanting
+            user experiences. Let's embark on a journey where every click
+            unveils a new chapter in the art of frontend development.
           </motion.p>
 
           {/* counter */}
@@ -217,7 +221,11 @@ const About = () => {
                   <div className="flex gap-x-4">
                     {" "}
                     {item.icons?.map((icon, itemIndex) => {
-                      return <div className="text-2xl text-white">{icon}</div>;
+                      return (
+                        <div key={itemIndex} className="text-2xl text-white">
+                          {icon}
+                        </div>
+                      );
                     })}
                   </div>
                 </div>

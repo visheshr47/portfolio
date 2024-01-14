@@ -2,9 +2,11 @@ import TestimonialSlider from "../../components/TestimonialSlider";
 //framer motion
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import Circles from "../../components/Circles";
 const Testimonials = () => {
   return (
     <div className="h-full bg-primary/30 py-30 text-center ">
+      <Circles />
       <div className="container mx-auto h-full flex flex-col justify-center">
         {/* title */}
         <motion.h2

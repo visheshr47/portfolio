@@ -32,7 +32,11 @@ const Home = () => {
             animate="show"
             exit="hidden"
           >
-            Voluptate excepteur incididunt pariatur ut id ea elit culpa culpa.
+            Hi, I am a versatile, high-energy professional offering 3+ years of
+            experience in gathering and understanding requirements of clients &
+            other multiple stakeholders, targeting assignments in Frontend
+            Development with an organization of high repute preferably in IT
+            industry.
           </motion.p>
           {/* btn*/}
           <div className="flex justify-center xl:hidden relative">
