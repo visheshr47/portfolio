@@ -29,9 +29,12 @@ const Work = () => {
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              lorem ipsum fnckjfncfwenkvcneakn d svcwj nfewjvvkjewnknfjeknkjek
-              ejfnkwqfje qfknjnfew few fwjbncw efjbwej hfeh fh j fjh jh jh jh
-              fhjehjf jhbjehwfwebfjhbwehfjwh jjfbj
+              As a Frontend Developer, in ReactJS, NextJS, Tailwind CSS, and
+              Redux, I combine technical expertise with cutting-edge frontend
+              technologies. I ensure websites not only look great but also rank
+              high, delivering a seamless user experience. Elevate your digital
+              presence with my skillful integration of design and SEO
+              strategies.
             </motion.p>
           </div>
           <motion.div

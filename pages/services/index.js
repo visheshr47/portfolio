@@ -20,17 +20,25 @@ const Services = () => {
             >
               My Services<span className="text-accent ">.</span>
             </motion.h2>
-            <motion.p
+            <motion.ul
+              itemType="disk "
               variants={fadeIn("up", 0.4)}
               initial="hidden"
               animate="show"
               exit="hidden"
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              lorem ipsum fnckjfncfwenkvcneakn d svcwj nfewjvvkjewnknfjeknkjek
-              ejfnkwqfje qfknjnfew few fwjbncw efjbwej hfeh fh j fjh jh jh jh
-              fhjehjf jhbjehwfwebfjhbwehfjwh jjfbj
-            </motion.p>
+              <li>- Responsive Web Design.</li>
+              <li>- User Interface (UI) Development.</li>
+              <li>- Cross-browser Compatibility.</li>
+              <li>- Performance Optimization.</li>
+              <li>
+                - Frontend Framework Integration <br />
+                (e.g. React, Next).
+              </li>
+              <li>- Interactive Web Components.</li>
+              <li>- Code Refactoring and Maintenance.</li>
+            </motion.ul>
           </div>
           <motion.div
             variants={fadeIn("down", 0.6)}

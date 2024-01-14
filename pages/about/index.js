@@ -5,8 +5,8 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
   FaFigma,
+  FaNodeJs,
 } from "react-icons/fa";
 
 import {
@@ -14,6 +14,8 @@ import {
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiRedux,
+  SiTailwindcss,
 } from "react-icons/si";
 
 //  data
@@ -22,20 +24,20 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
-        icons: [
-          <FaHtml5 />,
-          <FaCss3 />,
-          <FaJs />,
-          <FaReact />,
-          <SiNextdotjs />,
-          <SiFramer />,
-          <FaWordpress />,
-        ],
+        title: "Frontend",
+        icons: [<FaReact />, <SiNextdotjs />, <SiRedux />, <FaHtml5 />],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma />, <SiAdobexd />, <SiAdobephotoshop />],
+        title: "Backend",
+        icons: [<FaNodeJs />],
+      },
+      {
+        title: "Programming Language",
+        icons: [<FaJs />],
+      },
+      {
+        title: "Styling",
+        icons: [<SiTailwindcss />, <FaCss3 />],
       },
     ],
   },
@@ -43,12 +45,19 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        company: "I.I.M., Kozhikode, Kerala",
+        title: "Artificial Intelligence and Machine Learning ",
+        stage: "Mar’21 - Feb’23",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
+        company: "Udemy",
+        title: "The Complete 2023 Web Development Bootcamp -",
+        stage: "2021",
+      },
+      {
+        company: "Johns Hopkins University",
+        title: "The Data Scientist's Toolbox -",
+        stage: "2019",
       },
     ],
   },
@@ -56,16 +65,14 @@ const aboutData = [
     title: "experience",
     info: [
       {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        company: "RapidShyp",
+        title: "Software Engineer",
+        stage: "2023 - Present",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
-      },
-      {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        company: "Cognizant",
+        title: "Associate",
+        stage: "2021 - 2023",
       },
     ],
   },
@@ -73,16 +80,9 @@ const aboutData = [
     title: "credentials",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
-      },
-      {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
-      },
-      {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        company: "J.S.S Academy Of Technical Education",
+        title: "Bachelor of Technology",
+        stage: "2016-2020",
       },
     ],
   },
@@ -215,14 +215,17 @@ const About = () => {
                   key={itemIndex}
                   className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/70 "
                 >
-                  <div className="font-light mb-2 md:mb-0">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
+                  <div className="font-light mb-2 md:mb-0 text-accent">
+                    {item.company}
+                  </div>
+                  <div className="  mb-2 md:mb-0">{item.title}</div>
+
+                  <i className=" ">{item.stage}</i>
                   <div className="flex gap-x-4">
                     {" "}
                     {item.icons?.map((icon, itemIndex) => {
                       return (
-                        <div key={itemIndex} className="text-2xl text-white">
+                        <div key={itemIndex} className="text-3xl text-white">
                           {icon}
                         </div>
                       );
