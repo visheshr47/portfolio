@@ -45,18 +45,19 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        company: "I.I.M., Kozhikode, Kerala",
-        title: "Artificial Intelligence and Machine Learning ",
-        stage: "Mar’21 - Feb’23",
-      },
-      {
-        company: "Udemy",
-        title: "The Complete 2023 Web Development Bootcamp -",
+        company: "Scrimba",
+        title: "React Developer Certification  ",
         stage: "2021",
       },
       {
+        company: "I.I.M., Kozhikode",
+        title:
+          "Artificial Intelligence & Machine Learning In Business Excellence ",
+        stage: "2023",
+      },
+      {
         company: "Johns Hopkins University",
-        title: "The Data Scientist's Toolbox -",
+        title: "The Data Scientist's Toolbox ",
         stage: "2019",
       },
     ],
@@ -164,7 +165,7 @@ const About = () => {
               {/* client */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0  ">
                 <div className="text-2xl xl:text-3xl font-extrabold text-accent mb-2">
-                  <CountUp start={0} end={250} duration={7} />+
+                  <CountUp start={0} end={15} duration={7} />+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
                   Satisfied Clients
